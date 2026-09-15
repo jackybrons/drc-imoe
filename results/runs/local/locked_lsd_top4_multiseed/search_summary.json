@@ -1,0 +1,151 @@
+{
+  "protocol": {
+    "selection_split": "validation",
+    "selection_metric": "global_mse",
+    "test_policy": "not loaded or evaluated in selection-only mode"
+  },
+  "budget": {
+    "max_trials": 3,
+    "max_training_jobs": 6,
+    "max_epochs_per_training": 1500,
+    "patience": 250,
+    "actual_training_jobs": 6
+  },
+  "search": {
+    "search_seed": 2025,
+    "candidate_count": 3,
+    "seeds": [
+      2025,
+      2026,
+      2027
+    ],
+    "hidden_dims": [
+      64
+    ],
+    "learning_rates": [
+      0.0001
+    ],
+    "num_experts_values": [
+      5
+    ],
+    "baseline_top_k_values": [
+      2
+    ],
+    "csr_top_k_values": [
+      4
+    ],
+    "router_alpha_values": [
+      10
+    ],
+    "curve_channels_values": [
+      4
+    ],
+    "diversity_weights": [
+      0.5
+    ],
+    "soc_values": [
+      20
+    ]
+  },
+  "runtime": {
+    "device": "cuda",
+    "gpu": 0,
+    "seq_len": 50,
+    "pred_len": 50,
+    "batch_size": 32,
+    "dataaccess": 100
+  },
+  "workflow": "dual_router",
+  "dataset": "LSD",
+  "condition": "LSD",
+  "trials": [
+    {
+      "trial_id": 0,
+      "config": {
+        "seed": 2026,
+        "hidden_dim": 64,
+        "learning_rate": 0.0001,
+        "num_experts": 5,
+        "diverloss": 0.5,
+        "soc": 20,
+        "baseline_top_k": 2,
+        "csr_top_k": 4,
+        "router_alpha": 10,
+        "curve_channels": 4
+      },
+      "validation_mse": 0.001197003643028438,
+      "baseline_validation_mse": 0.0013017124729231,
+      "curve_validation_mse": 0.0013343936298042536,
+      "alpha": 0.4660969376564026,
+      "baseline_source": "trained",
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE/LSD/LSD/iMOE_trial_000/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_000/checkpoint.pth"
+    },
+    {
+      "trial_id": 1,
+      "config": {
+        "seed": 2025,
+        "hidden_dim": 64,
+        "learning_rate": 0.0001,
+        "num_experts": 5,
+        "diverloss": 0.5,
+        "soc": 20,
+        "baseline_top_k": 2,
+        "csr_top_k": 4,
+        "router_alpha": 10,
+        "curve_channels": 4
+      },
+      "validation_mse": 0.001200816361233592,
+      "baseline_validation_mse": 0.0013783950125798583,
+      "curve_validation_mse": 0.0012612133286893368,
+      "alpha": 0.6316349506378174,
+      "baseline_source": "trained",
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_001/iMOE/LSD/LSD/iMOE_trial_001/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_001/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_001/checkpoint.pth"
+    },
+    {
+      "trial_id": 2,
+      "config": {
+        "seed": 2027,
+        "hidden_dim": 64,
+        "learning_rate": 0.0001,
+        "num_experts": 5,
+        "diverloss": 0.5,
+        "soc": 20,
+        "baseline_top_k": 2,
+        "csr_top_k": 4,
+        "router_alpha": 10,
+        "curve_channels": 4
+      },
+      "validation_mse": 0.0012637648032978177,
+      "baseline_validation_mse": 0.0014012505998834968,
+      "curve_validation_mse": 0.0013059669872745872,
+      "alpha": 0.643485426902771,
+      "baseline_source": "trained",
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_002/iMOE/LSD/LSD/iMOE_trial_002/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_002/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_002/checkpoint.pth"
+    }
+  ],
+  "winner": {
+    "trial_id": 0,
+    "config": {
+      "seed": 2026,
+      "hidden_dim": 64,
+      "learning_rate": 0.0001,
+      "num_experts": 5,
+      "diverloss": 0.5,
+      "soc": 20,
+      "baseline_top_k": 2,
+      "csr_top_k": 4,
+      "router_alpha": 10,
+      "curve_channels": 4
+    },
+    "validation_mse": 0.001197003643028438,
+    "baseline_validation_mse": 0.0013017124729231,
+    "curve_validation_mse": 0.0013343936298042536,
+    "alpha": 0.4660969376564026,
+    "baseline_source": "trained",
+    "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE/LSD/LSD/iMOE_trial_000/checkpoint.pth",
+    "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_000/checkpoint.pth"
+  }
+}

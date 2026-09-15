@@ -1,0 +1,33 @@
+{
+  "prediction_shape": [
+    928,
+    50
+  ],
+  "global": {
+    "rmse": 0.009271099232137203,
+    "mae": 0.00625190231949091,
+    "mape_percent": 0.31944899819791317,
+    "r2": 0.9982134540332481
+  },
+  "training_protocol": {
+    "max_epochs": 1500,
+    "batch_size": 32,
+    "patience": 250,
+    "learning_rate": 0.0001,
+    "loss": "MSE",
+    "checkpoint_selection": "validation_global_mse"
+  },
+  "evaluation_protocol": {
+    "batch_size": 64
+  },
+  "data_protocol": {
+    "data_root": "datasets/processed",
+    "requested_dataaccess_percent": 100,
+    "requested_train_battery_count": null,
+    "actual_train_battery_count": 1,
+    "available_train_batteries": 1,
+    "selected_train_batteries": [
+      "CY25-05_1-#1.csv"
+    ]
+  }
+}

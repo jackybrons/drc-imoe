@@ -1,0 +1,47 @@
+{
+  "prediction_shape": [
+    8252,
+    50
+  ],
+  "global": {
+    "rmse": 0.04931633546948433,
+    "mae": 0.03997169807553291,
+    "mape_percent": 2.5771157816052437,
+    "r2": 0.9295747578144073
+  },
+  "training_protocol": {
+    "max_epochs": 1500,
+    "batch_size": 32,
+    "patience": 250,
+    "learning_rate": 0.0001,
+    "loss": "MSE",
+    "checkpoint_selection": "validation_global_mse"
+  },
+  "evaluation_protocol": {
+    "batch_size": 64
+  },
+  "data_protocol": {
+    "data_root": "datasets/processed",
+    "requested_dataaccess_percent": 100,
+    "requested_train_battery_count": 15,
+    "actual_train_battery_count": 15,
+    "available_train_batteries": 57,
+    "selected_train_batteries": [
+      "6.csv",
+      "23.csv",
+      "30.csv",
+      "17.csv",
+      "32.csv",
+      "41.csv",
+      "19.csv",
+      "82.csv",
+      "52.csv",
+      "50.csv",
+      "29.csv",
+      "18.csv",
+      "38.csv",
+      "63.csv",
+      "3.csv"
+    ]
+  }
+}

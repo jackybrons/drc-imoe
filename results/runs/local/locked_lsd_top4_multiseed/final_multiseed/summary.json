@@ -1,0 +1,240 @@
+{
+  "protocol": {
+    "configuration": "locked by validation-only search summary",
+    "alpha": "per-seed validation alpha from the input summary",
+    "test_policy": "each declared seed evaluated once; no test-based selection"
+  },
+  "source_search_summary": "results/runs/local/locked_lsd_top4_multiseed/search_summary.json",
+  "dataset": "LSD",
+  "condition": "LSD",
+  "device": "cuda:0",
+  "declared_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "locked_config_without_seed": {
+    "hidden_dim": 64,
+    "learning_rate": 0.0001,
+    "num_experts": 5,
+    "diverloss": 0.5,
+    "soc": 20,
+    "baseline_top_k": 2,
+    "csr_top_k": 4,
+    "router_alpha": 10,
+    "curve_channels": 4
+  },
+  "seeds": [
+    {
+      "seed": 2025,
+      "trial_id": 1,
+      "validation_alpha": 0.6316349506378174,
+      "selection_validation_mse": 0.001200816361233592,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_001/iMOE/LSD/LSD/iMOE_trial_001/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_001/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_001/checkpoint.pth",
+      "prediction_shape": [
+        8252,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.039328061044216156,
+          "mae": 0.029352474957704544,
+          "mape_percent": 1.8978744745254517,
+          "r2": 0.9552130103111267
+        },
+        "curve": {
+          "rmse": 0.037445068359375,
+          "mae": 0.02870255894958973,
+          "mape_percent": 1.8458876609802246,
+          "r2": 0.9593991041183472
+        },
+        "ensemble": {
+          "rmse": 0.03672132268548012,
+          "mae": 0.027858180925250053,
+          "mape_percent": 1.7964571714401245,
+          "r2": 0.960953414440155
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2025/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2025/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2025/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2025/true_values.npy"
+      }
+    },
+    {
+      "seed": 2026,
+      "trial_id": 0,
+      "validation_alpha": 0.4660969376564026,
+      "selection_validation_mse": 0.001197003643028438,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE/LSD/LSD/iMOE_trial_000/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_000/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_000/checkpoint.pth",
+      "prediction_shape": [
+        8252,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.03470924496650696,
+          "mae": 0.02628217451274395,
+          "mape_percent": 1.6932592391967773,
+          "r2": 0.9651151299476624
+        },
+        "curve": {
+          "rmse": 0.036118339747190475,
+          "mae": 0.027489691972732544,
+          "mape_percent": 1.7583413124084473,
+          "r2": 0.9622251987457275
+        },
+        "ensemble": {
+          "rmse": 0.0337243489921093,
+          "mae": 0.02551775798201561,
+          "mape_percent": 1.6430238485336304,
+          "r2": 0.9670668244361877
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2026/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2026/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2026/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2026/true_values.npy"
+      }
+    },
+    {
+      "seed": 2027,
+      "trial_id": 2,
+      "validation_alpha": 0.643485426902771,
+      "selection_validation_mse": 0.0012637648032978177,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_002/iMOE/LSD/LSD/iMOE_trial_002/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_lsd_top4_multiseed/trials/trial_002/iMOE_CSR/LSD/LSD/iMOE_CSR_trial_002/checkpoint.pth",
+      "prediction_shape": [
+        8252,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.03922455757856369,
+          "mae": 0.029532216489315033,
+          "mape_percent": 1.8929169178009033,
+          "r2": 0.9554484486579895
+        },
+        "curve": {
+          "rmse": 0.03379081189632416,
+          "mae": 0.026472100988030434,
+          "mape_percent": 1.694002389907837,
+          "r2": 0.9669368863105774
+        },
+        "ensemble": {
+          "rmse": 0.03450336679816246,
+          "mae": 0.02665017358958721,
+          "mape_percent": 1.7077889442443848,
+          "r2": 0.9655277729034424
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2027/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2027/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2027/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/seed_2027/true_values.npy"
+      }
+    }
+  ],
+  "aggregate": {
+    "std_definition": "population standard deviation (ddof=0)",
+    "models": {
+      "baseline": {
+        "rmse": {
+          "mean": 0.03775395452976227,
+          "std": 0.0021533494042668
+        },
+        "mae": {
+          "mean": 0.028388955319921177,
+          "std": 0.001491525121402958
+        },
+        "mape_percent": {
+          "mean": 1.8280168771743774,
+          "std": 0.0953095311328506
+        },
+        "r2": {
+          "mean": 0.9585921963055929,
+          "std": 0.00461341198954562
+        }
+      },
+      "curve": {
+        "rmse": {
+          "mean": 0.03578474000096321,
+          "std": 0.0015103783560087153
+        },
+        "mae": {
+          "mean": 0.02755478397011757,
+          "std": 0.0009117431676605318
+        },
+        "mape_percent": {
+          "mean": 1.7660771210988362,
+          "std": 0.062247709164026784
+        },
+        "r2": {
+          "mean": 0.962853729724884,
+          "std": 0.0031092151730187836
+        }
+      },
+      "ensemble": {
+        "rmse": {
+          "mean": 0.034983012825250626,
+          "std": 0.001269647736753592
+        },
+        "mae": {
+          "mean": 0.02667537083228429,
+          "std": 0.0009556397731656685
+        },
+        "mape_percent": {
+          "mean": 1.7157566547393799,
+          "std": 0.06289175596441432
+        },
+        "r2": {
+          "mean": 0.9645160039265951,
+          "std": 0.0025963054252509405
+        }
+      }
+    },
+    "ensemble_minus_baseline": {
+      "rmse": {
+        "mean": -0.0027709417045116425,
+        "std": 0.0015297487317454549,
+        "by_seed": {
+          "2025": -0.002606738358736038,
+          "2026": -0.0009848959743976593,
+          "2027": -0.00472119078040123
+        }
+      },
+      "mae": {
+        "mean": -0.001713584487636884,
+        "std": 0.0008783133789527357,
+        "by_seed": {
+          "2025": -0.0014942940324544907,
+          "2026": -0.0007644165307283401,
+          "2027": -0.0028820428997278214
+        }
+      },
+      "mape_percent": {
+        "mean": -0.11226022243499756,
+        "std": 0.055600832757126184,
+        "by_seed": {
+          "2025": -0.10141730308532715,
+          "2026": -0.05023539066314697,
+          "2027": -0.18512797355651855
+        }
+      },
+      "r2": {
+        "mean": 0.005923807621002197,
+        "std": 0.003320624338592013,
+        "by_seed": {
+          "2025": 0.00574040412902832,
+          "2026": 0.0019516944885253906,
+          "2027": 0.01007932424545288
+        }
+      }
+    }
+  }
+}

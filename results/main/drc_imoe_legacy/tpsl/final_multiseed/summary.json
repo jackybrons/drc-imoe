@@ -1,0 +1,297 @@
+{
+  "protocol": {
+    "configuration": "fixed iMOE_SDR configuration; no hyperparameter search",
+    "checkpoint_selection": "per-seed validation prediction MSE",
+    "test_policy": "each locked seed evaluated once",
+    "reference_accuracy": "reused existing prediction arrays; checkpoints not rerun"
+  },
+  "source_search_summary": "results/runs/local/shared_dual_router_tpsl_arbitrary/search_summary.json",
+  "reference_summary": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/summary.json",
+  "dataset": "TPSL",
+  "condition": "Arbitrary",
+  "device": "cuda:0",
+  "runtime": {
+    "device": "cuda",
+    "gpu": 0,
+    "seq_len": 50,
+    "pred_len": 50,
+    "batch_size": 32,
+    "dataaccess": 100
+  },
+  "declared_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "locked_config_without_seed": {
+    "hidden_dim": 128,
+    "learning_rate": 0.0001,
+    "num_experts": 5,
+    "diverloss": 0.5,
+    "soc": 20,
+    "baseline_top_k": 2,
+    "csr_top_k": 4,
+    "router_alpha": 10,
+    "curve_channels": 4
+  },
+  "seeds": [
+    {
+      "seed": 2025,
+      "trial_id": 0,
+      "selection_validation_mse": 0.0019996033515781164,
+      "checkpoint": "checkpoints/imported/local/shared_dual_router_tpsl_arbitrary/trials/trial_000/iMOE_SDR/TPSL/Arbitrary/iMOE_SDR_trial_000/checkpoint.pth",
+      "prediction_shape": [
+        247,
+        50
+      ],
+      "parameters": {
+        "total": 150486,
+        "trainable": 150486
+      },
+      "metrics": {
+        "baseline": {
+          "rmse": 0.058486051857471466,
+          "mae": 0.04412649944424629,
+          "mape_percent": 3.200294017791748,
+          "r2": 0.9818938374519348
+        },
+        "dual_router": {
+          "rmse": 0.05836443975567818,
+          "mae": 0.04336908087134361,
+          "mape_percent": 3.160193920135498,
+          "r2": 0.9819690585136414
+        },
+        "iMOE_SDR": {
+          "rmse": 0.06000155955553055,
+          "mae": 0.04438893124461174,
+          "mape_percent": 3.2569804191589355,
+          "r2": 0.9809433817863464
+        }
+      },
+      "artifacts": {
+        "pred_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2025/pred_values.npy",
+        "true_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2025/true_values.npy",
+        "reference_baseline_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2025/baseline_pred.npy",
+        "reference_dual_router_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2025/ensemble_pred.npy",
+        "reference_true_values": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2025/true_values.npy"
+      }
+    },
+    {
+      "seed": 2026,
+      "trial_id": 1,
+      "selection_validation_mse": 0.002169392304494977,
+      "checkpoint": "checkpoints/imported/local/shared_dual_router_tpsl_arbitrary/trials/trial_001/iMOE_SDR/TPSL/Arbitrary/iMOE_SDR_trial_001/checkpoint.pth",
+      "prediction_shape": [
+        247,
+        50
+      ],
+      "parameters": {
+        "total": 150486,
+        "trainable": 150486
+      },
+      "metrics": {
+        "baseline": {
+          "rmse": 0.05753890052437782,
+          "mae": 0.04151131957769394,
+          "mape_percent": 3.0607004165649414,
+          "r2": 0.9824755787849426
+        },
+        "dual_router": {
+          "rmse": 0.05753890052437782,
+          "mae": 0.04151131957769394,
+          "mape_percent": 3.0607004165649414,
+          "r2": 0.9824755787849426
+        },
+        "iMOE_SDR": {
+          "rmse": 0.06072099879384041,
+          "mae": 0.04387189820408821,
+          "mape_percent": 3.2462317943573,
+          "r2": 0.9804836511611938
+        }
+      },
+      "artifacts": {
+        "pred_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2026/pred_values.npy",
+        "true_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2026/true_values.npy",
+        "reference_baseline_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2026/baseline_pred.npy",
+        "reference_dual_router_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2026/ensemble_pred.npy",
+        "reference_true_values": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2026/true_values.npy"
+      }
+    },
+    {
+      "seed": 2027,
+      "trial_id": 2,
+      "selection_validation_mse": 0.0021831432823091745,
+      "checkpoint": "checkpoints/imported/local/shared_dual_router_tpsl_arbitrary/trials/trial_002/iMOE_SDR/TPSL/Arbitrary/iMOE_SDR_trial_002/checkpoint.pth",
+      "prediction_shape": [
+        247,
+        50
+      ],
+      "parameters": {
+        "total": 150486,
+        "trainable": 150486
+      },
+      "metrics": {
+        "baseline": {
+          "rmse": 0.054927390068769455,
+          "mae": 0.039371125400066376,
+          "mape_percent": 2.8836896419525146,
+          "r2": 0.9840301871299744
+        },
+        "dual_router": {
+          "rmse": 0.05381917953491211,
+          "mae": 0.038414984941482544,
+          "mape_percent": 2.823826313018799,
+          "r2": 0.9846681356430054
+        },
+        "iMOE_SDR": {
+          "rmse": 0.05997667461633682,
+          "mae": 0.04330949857831001,
+          "mape_percent": 3.20093035697937,
+          "r2": 0.9809591770172119
+        }
+      },
+      "artifacts": {
+        "pred_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2027/pred_values.npy",
+        "true_values": "results/runs/local/shared_dual_router_tpsl_arbitrary/final_multiseed/seed_2027/true_values.npy",
+        "reference_baseline_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2027/baseline_pred.npy",
+        "reference_dual_router_pred": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2027/ensemble_pred.npy",
+        "reference_true_values": "results/runs/local/locked_tpsl_arbitrary_top4_multiseed_evalfix/final_multiseed/seed_2027/true_values.npy"
+      }
+    }
+  ],
+  "aggregate": {
+    "std_definition": "population standard deviation (ddof=0)",
+    "models": {
+      "baseline": {
+        "rmse": {
+          "mean": 0.056984114150206246,
+          "std": 0.0015048497981120421
+        },
+        "mae": {
+          "mean": 0.04166964814066887,
+          "std": 0.0019445987633108777
+        },
+        "mape_percent": {
+          "mean": 3.0482280254364014,
+          "std": 0.12955372915122926
+        },
+        "r2": {
+          "mean": 0.9827998677889506,
+          "std": 0.0009018019018628894
+        }
+      },
+      "dual_router": {
+        "rmse": {
+          "mean": 0.056574173271656036,
+          "std": 0.0019770131718879523
+        },
+        "mae": {
+          "mean": 0.041098461796840034,
+          "std": 0.0020434619776211827
+        },
+        "mape_percent": {
+          "mean": 3.014906883239746,
+          "std": 0.14108762655446405
+        },
+        "r2": {
+          "mean": 0.9830375909805298,
+          "std": 0.001171366045423176
+        }
+      },
+      "iMOE_SDR": {
+        "rmse": {
+          "mean": 0.060233077655235924,
+          "std": 0.000345161887788411
+        },
+        "mae": {
+          "mean": 0.04385677600900332,
+          "std": 0.0004408062543854183
+        },
+        "mape_percent": {
+          "mean": 3.2347141901652017,
+          "std": 0.024288457784548093
+        },
+        "r2": {
+          "mean": 0.9807954033215841,
+          "std": 0.00022053636051000698
+        }
+      }
+    },
+    "iMOE_SDR_minus_baseline": {
+      "rmse": {
+        "mean": 0.0032489635050296783,
+        "std": 0.0014434329277399206,
+        "by_seed": {
+          "2025": 0.001515507698059082,
+          "2026": 0.0031820982694625854,
+          "2027": 0.0050492845475673676
+        }
+      },
+      "mae": {
+        "mean": 0.002187127868334452,
+        "std": 0.0015057003082736163,
+        "by_seed": {
+          "2025": 0.000262431800365448,
+          "2026": 0.002360578626394272,
+          "2027": 0.003938373178243637
+        }
+      },
+      "mape_percent": {
+        "mean": 0.18648616472880045,
+        "std": 0.10637299564969692,
+        "by_seed": {
+          "2025": 0.0566864013671875,
+          "2026": 0.1855313777923584,
+          "2027": 0.31724071502685547
+        }
+      },
+      "r2": {
+        "mean": -0.0020044644673665366,
+        "std": 0.0008657581148694116,
+        "by_seed": {
+          "2025": -0.0009504556655883789,
+          "2026": -0.0019919276237487793,
+          "2027": -0.003071010112762451
+        }
+      }
+    },
+    "iMOE_SDR_minus_dual_router": {
+      "rmse": {
+        "mean": 0.00365890438357989,
+        "std": 0.0018759808500101647,
+        "by_seed": {
+          "2025": 0.0016371197998523712,
+          "2026": 0.0031820982694625854,
+          "2027": 0.006157495081424713
+        }
+      },
+      "mae": {
+        "mean": 0.0027583142121632895,
+        "std": 0.001606631890764932,
+        "by_seed": {
+          "2025": 0.0010198503732681274,
+          "2026": 0.002360578626394272,
+          "2027": 0.004894513636827469
+        }
+      },
+      "mape_percent": {
+        "mean": 0.21980730692545572,
+        "std": 0.1169775220241004,
+        "by_seed": {
+          "2025": 0.0967864990234375,
+          "2026": 0.1855313777923584,
+          "2027": 0.3771040439605713
+        }
+      },
+      "r2": {
+        "mean": -0.0022421876589457193,
+        "std": 0.0011096464904389012,
+        "by_seed": {
+          "2025": -0.0010256767272949219,
+          "2026": -0.0019919276237487793,
+          "2027": -0.003708958625793457
+        }
+      }
+    }
+  }
+}

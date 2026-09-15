@@ -1,0 +1,70 @@
+{
+  "prediction_shape": [
+    247,
+    50
+  ],
+  "global": {
+    "rmse": 0.054991621524095535,
+    "mae": 0.04012022167444229,
+    "mape_percent": 2.964947000145912,
+    "r2": 0.9839928392320871
+  },
+  "training_protocol": {
+    "max_epochs": 1500,
+    "batch_size": 32,
+    "patience": 250,
+    "learning_rate": 0.0001,
+    "loss": "MSE",
+    "checkpoint_selection": "validation_global_mse"
+  },
+  "evaluation_protocol": {
+    "batch_size": 64
+  },
+  "data_protocol": {
+    "data_root": "datasets/processed",
+    "requested_dataaccess_percent": 100,
+    "requested_train_battery_count": null,
+    "actual_train_battery_count": 38,
+    "available_train_batteries": 38,
+    "selected_train_batteries": [
+      "#1",
+      "#3",
+      "#7",
+      "#9",
+      "#14",
+      "#15",
+      "#17",
+      "#18",
+      "#20",
+      "#21",
+      "#24",
+      "#25",
+      "#27",
+      "#28",
+      "#30",
+      "#31",
+      "#34",
+      "#36",
+      "#37",
+      "#39",
+      "#40",
+      "#42",
+      "#46",
+      "#47",
+      "#50",
+      "#54",
+      "#55",
+      "#56",
+      "#59",
+      "#60",
+      "#74",
+      "#75",
+      "#76",
+      "#77",
+      "#67",
+      "#68",
+      "#69",
+      "#73"
+    ]
+  }
+}

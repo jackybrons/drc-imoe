@@ -1,0 +1,51 @@
+# Local-only generated artifacts
+server_results/
+server_results_high_yield/
+external-artifacts/
+raw_data/
+tmp/
+scratch/
+_deprecated/checkpoints*/
+*.log
+
+# Manuscript, submission, and presentation materials
+paper/
+assets/
+backup_diagrams/
+CITATION.cff
+scripts/build_presentation.py
+scripts/build_drc_imoe_architecture_pptx.py
+scripts/generate_16x9.py
+scripts/generate_1to1_ppt.py
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local assistant and review artifacts
+.codex/
+.codex_artifacts/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.pptx.*
+
+# QA review renderings and visual inspection artifacts
+paper/qa/
+

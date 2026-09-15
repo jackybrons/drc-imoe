@@ -1,0 +1,240 @@
+{
+  "protocol": {
+    "configuration": "locked by validation-only search summary",
+    "alpha": "per-seed validation alpha from the input summary",
+    "test_policy": "each declared seed evaluated once; no test-based selection"
+  },
+  "source_search_summary": "results/runs/local/locked_ul_top4_multiseed_evalfix/search_summary.json",
+  "dataset": "UL-NCA",
+  "condition": "CY25-025_1",
+  "device": "cuda:0",
+  "declared_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "locked_config_without_seed": {
+    "hidden_dim": 64,
+    "learning_rate": 0.0001,
+    "num_experts": 5,
+    "diverloss": 0.5,
+    "soc": 20,
+    "baseline_top_k": 2,
+    "csr_top_k": 4,
+    "router_alpha": 10,
+    "curve_channels": 4
+  },
+  "seeds": [
+    {
+      "seed": 2025,
+      "trial_id": 1,
+      "validation_alpha": 1.0,
+      "selection_validation_mse": 0.0012751794420182705,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_001/iMOE/UL-NCA/CY25-025_1/iMOE_trial_001/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_001/iMOE_CSR/UL-NCA/CY25-025_1/iMOE_CSR_trial_001/checkpoint.pth",
+      "prediction_shape": [
+        729,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.03303568810224533,
+          "mae": 0.02630998194217682,
+          "mape_percent": 0.9219710826873779,
+          "r2": 0.9610274434089661
+        },
+        "curve": {
+          "rmse": 0.033737488090991974,
+          "mae": 0.02825336717069149,
+          "mape_percent": 0.9886173605918884,
+          "r2": 0.959354043006897
+        },
+        "ensemble": {
+          "rmse": 0.033737488090991974,
+          "mae": 0.02825336717069149,
+          "mape_percent": 0.9886173605918884,
+          "r2": 0.959354043006897
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2025/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2025/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2025/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2025/true_values.npy"
+      }
+    },
+    {
+      "seed": 2026,
+      "trial_id": 0,
+      "validation_alpha": 1.0,
+      "selection_validation_mse": 0.0011963199358433485,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_000/iMOE/UL-NCA/CY25-025_1/iMOE_trial_000/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_000/iMOE_CSR/UL-NCA/CY25-025_1/iMOE_CSR_trial_000/checkpoint.pth",
+      "prediction_shape": [
+        729,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.038561102002859116,
+          "mae": 0.032014187425374985,
+          "mape_percent": 1.1262693405151367,
+          "r2": 0.946900486946106
+        },
+        "curve": {
+          "rmse": 0.03054525889456272,
+          "mae": 0.024501554667949677,
+          "mape_percent": 0.8519212007522583,
+          "r2": 0.966681957244873
+        },
+        "ensemble": {
+          "rmse": 0.03054525889456272,
+          "mae": 0.024501554667949677,
+          "mape_percent": 0.8519212007522583,
+          "r2": 0.966681957244873
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2026/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2026/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2026/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2026/true_values.npy"
+      }
+    },
+    {
+      "seed": 2027,
+      "trial_id": 2,
+      "validation_alpha": 0.029707225039601326,
+      "selection_validation_mse": 0.0013052064459770918,
+      "baseline_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_002/iMOE/UL-NCA/CY25-025_1/iMOE_trial_002/checkpoint.pth",
+      "curve_checkpoint": "checkpoints/imported/local/locked_ul_top4_multiseed/trials/trial_002/iMOE_CSR/UL-NCA/CY25-025_1/iMOE_CSR_trial_002/checkpoint.pth",
+      "prediction_shape": [
+        729,
+        50
+      ],
+      "metrics": {
+        "baseline": {
+          "rmse": 0.03142458572983742,
+          "mae": 0.024955181404948235,
+          "mape_percent": 0.8702033162117004,
+          "r2": 0.9647360444068909
+        },
+        "curve": {
+          "rmse": 0.03203151747584343,
+          "mae": 0.02502743899822235,
+          "mape_percent": 0.875899076461792,
+          "r2": 0.9633607268333435
+        },
+        "ensemble": {
+          "rmse": 0.03137826547026634,
+          "mae": 0.024913599714636803,
+          "mape_percent": 0.8688807487487793,
+          "r2": 0.9648399353027344
+        }
+      },
+      "artifacts": {
+        "baseline_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2027/baseline_pred.npy",
+        "curve_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2027/curve_pred.npy",
+        "ensemble_pred": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2027/ensemble_pred.npy",
+        "true_values": "results/runs/local/locked_ul_top4_multiseed_evalfix/final_multiseed/seed_2027/true_values.npy"
+      }
+    }
+  ],
+  "aggregate": {
+    "std_definition": "population standard deviation (ddof=0)",
+    "models": {
+      "baseline": {
+        "rmse": {
+          "mean": 0.034340458611647286,
+          "std": 0.003056063447250363
+        },
+        "mae": {
+          "mean": 0.027759783590833347,
+          "std": 0.0030587399491120155
+        },
+        "mape_percent": {
+          "mean": 0.9728145798047384,
+          "std": 0.1105478722846179
+        },
+        "r2": {
+          "mean": 0.9575546582539877,
+          "std": 0.007684267695914774
+        }
+      },
+      "curve": {
+        "rmse": {
+          "mean": 0.03210475482046604,
+          "std": 0.0013042506385199041
+        },
+        "mae": {
+          "mean": 0.025927453612287838,
+          "std": 0.0016586227204282143
+        },
+        "mape_percent": {
+          "mean": 0.9054792126019796,
+          "std": 0.0595969706684238
+        },
+        "r2": {
+          "mean": 0.9631322423617045,
+          "std": 0.0029959679165080335
+        }
+      },
+      "ensemble": {
+        "rmse": {
+          "mean": 0.031887004151940346,
+          "std": 0.0013519598355245593
+        },
+        "mae": {
+          "mean": 0.02588950718442599,
+          "std": 0.0016799446034765943
+        },
+        "mape_percent": {
+          "mean": 0.9031397700309753,
+          "std": 0.060837052487969306
+        },
+        "r2": {
+          "mean": 0.9636253118515015,
+          "std": 0.0031124550187910964
+        }
+      }
+    },
+    "ensemble_minus_baseline": {
+      "rmse": {
+        "mean": -0.002453454459706942,
+        "std": 0.003945043014970672,
+        "by_seed": {
+          "2025": 0.0007017999887466431,
+          "2026": -0.008015843108296394,
+          "2027": -4.632025957107544e-05
+        }
+      },
+      "mae": {
+        "mean": -0.0018702764064073563,
+        "std": 0.004071212948750693,
+        "by_seed": {
+          "2025": 0.0019433852285146713,
+          "2026": -0.007512632757425308,
+          "2027": -4.1581690311431885e-05
+        }
+      },
+      "mape_percent": {
+        "mean": -0.06967480977376302,
+        "std": 0.1473619579850251,
+        "by_seed": {
+          "2025": 0.0666462779045105,
+          "2026": -0.2743481397628784,
+          "2027": -0.0013225674629211426
+        }
+      },
+      "r2": {
+        "mean": 0.006070653597513835,
+        "std": 0.009722124666653644,
+        "by_seed": {
+          "2025": -0.0016734004020690918,
+          "2026": 0.01978147029876709,
+          "2027": 0.00010389089584350586
+        }
+      }
+    }
+  }
+}

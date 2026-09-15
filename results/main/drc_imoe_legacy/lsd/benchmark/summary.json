@@ -1,0 +1,265 @@
+{
+  "protocol": {
+    "mode": "eval plus torch.inference_mode",
+    "data_loading": "CSV parsing, loader construction, and device transfer excluded",
+    "dual_timed_work": "baseline forward + CSR forward + on-device blend",
+    "shared_timed_work": "single iMOE_SDR forward",
+    "precision": "float32; no autocast or compilation",
+    "warmup_runs": 1,
+    "timed_runs": 10
+  },
+  "dual_summary": "results/runs/local/locked_lsd_top4_multiseed/final_multiseed/summary.json",
+  "shared_summary": "results/runs/local/shared_dual_router_lsd/final_multiseed/summary.json",
+  "dataset": "LSD",
+  "condition": "LSD",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "declared_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "seeds": [
+    {
+      "seed": 2025,
+      "alpha": 0.6316349506378174,
+      "parameters": {
+        "baseline": {
+          "total": 48809,
+          "trainable": 48809
+        },
+        "curve": {
+          "total": 48941,
+          "trainable": 48941
+        },
+        "dual_router": {
+          "total": 97750,
+          "trainable": 97750
+        },
+        "iMOE_SDR": {
+          "total": 49042,
+          "trainable": 49042
+        },
+        "reduction_percent": {
+          "total": 49.82915601023018,
+          "trainable": 49.82915601023018
+        }
+      },
+      "timing": {
+        "dual_router": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            836.9544000597671,
+            838.5137000586838,
+            806.909600039944,
+            745.3164999606088,
+            787.2240000870079,
+            680.7690999703482,
+            709.4117000233382,
+            675.3819000441581,
+            724.7943000402302,
+            651.6913999803364
+          ],
+          "median_ms": 735.0554000004195,
+          "ms_per_sample": 0.08907603005337124,
+          "samples_per_second": 11226.3647066538
+        },
+        "iMOE_SDR": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            529.3454999336973,
+            574.9775998992845,
+            557.0762000279501,
+            501.7378000775352,
+            501.45149999298155,
+            562.0612000348046,
+            531.7931000608951,
+            525.3427000716329,
+            551.1089999927208,
+            523.7273999955505
+          ],
+          "median_ms": 530.5692999972962,
+          "ms_per_sample": 0.06429584343156765,
+          "samples_per_second": 15553.10493849164
+        }
+      },
+      "speedup_dual_over_iMOE_SDR": 1.385408842924318
+    },
+    {
+      "seed": 2026,
+      "alpha": 0.4660969376564026,
+      "parameters": {
+        "baseline": {
+          "total": 48809,
+          "trainable": 48809
+        },
+        "curve": {
+          "total": 48941,
+          "trainable": 48941
+        },
+        "dual_router": {
+          "total": 97750,
+          "trainable": 97750
+        },
+        "iMOE_SDR": {
+          "total": 49042,
+          "trainable": 49042
+        },
+        "reduction_percent": {
+          "total": 49.82915601023018,
+          "trainable": 49.82915601023018
+        }
+      },
+      "timing": {
+        "dual_router": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            695.2744000591338,
+            679.7698000445962,
+            694.2762000253424,
+            700.720899971202,
+            691.5857999119908,
+            684.155400027521,
+            677.0505000604317,
+            694.8417000239715,
+            741.0478999372572,
+            704.9037999240682
+          ],
+          "median_ms": 694.558950024657,
+          "ms_per_sample": 0.08416855914016687,
+          "samples_per_second": 11880.92097827989
+        },
+        "iMOE_SDR": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            588.1863998947665,
+            545.9483000449836,
+            543.0239000124857,
+            536.0261999303475,
+            531.8387999432161,
+            534.7103999229148,
+            536.5229999879375,
+            551.9189999904484,
+            515.7284000888467,
+            543.5048999497667
+          ],
+          "median_ms": 539.7734500002116,
+          "ms_per_sample": 0.06541122758121808,
+          "samples_per_second": 15287.895319780484
+        }
+      },
+      "speedup_dual_over_iMOE_SDR": 1.2867601213516238
+    },
+    {
+      "seed": 2027,
+      "alpha": 0.643485426902771,
+      "parameters": {
+        "baseline": {
+          "total": 48809,
+          "trainable": 48809
+        },
+        "curve": {
+          "total": 48941,
+          "trainable": 48941
+        },
+        "dual_router": {
+          "total": 97750,
+          "trainable": 97750
+        },
+        "iMOE_SDR": {
+          "total": 49042,
+          "trainable": 49042
+        },
+        "reduction_percent": {
+          "total": 49.82915601023018,
+          "trainable": 49.82915601023018
+        }
+      },
+      "timing": {
+        "dual_router": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            760.8850999968126,
+            788.9716000063345,
+            712.8437999635935,
+            792.8552000084892,
+            753.209299989976,
+            811.1878000199795,
+            736.1816000193357,
+            735.6875999830663,
+            739.9289000313729,
+            718.2421999750659
+          ],
+          "median_ms": 746.5691000106744,
+          "ms_per_sample": 0.09047129180934009,
+          "samples_per_second": 11053.230035748886
+        },
+        "iMOE_SDR": {
+          "warmup_runs": 1,
+          "timed_runs": 10,
+          "num_samples": 8252,
+          "timings_ms": [
+            554.7278999583796,
+            563.7028999626637,
+            555.222800001502,
+            563.2813000120223,
+            552.3021999979392,
+            561.9670999003574,
+            575.0977999996394,
+            581.6448000259697,
+            564.7973000304773,
+            567.1400999417529
+          ],
+          "median_ms": 563.492099987343,
+          "ms_per_sample": 0.0682855186606087,
+          "samples_per_second": 14644.393417734436
+        }
+      },
+      "speedup_dual_over_iMOE_SDR": 1.3248971902666316
+    }
+  ],
+  "aggregate": {
+    "dual_router": {
+      "median_ms": {
+        "mean": 725.3944833452503,
+        "std": 22.304915876036578
+      },
+      "ms_per_sample": {
+        "mean": 0.08790529366762606,
+        "std": 0.0027029709011193105
+      },
+      "samples_per_second": {
+        "mean": 11386.838573560859,
+        "std": 356.44725702132877
+      }
+    },
+    "iMOE_SDR": {
+      "median_ms": {
+        "mean": 544.611616661617,
+        "std": 13.869236515367534
+      },
+      "ms_per_sample": {
+        "mean": 0.06599752989113147,
+        "std": 0.0016807121322549108
+      },
+      "samples_per_second": {
+        "mean": 15161.797892002187,
+        "std": 381.54473565445755
+      }
+    },
+    "speedup_dual_over_iMOE_SDR": {
+      "mean": 1.3323553848475245,
+      "std": 0.04061700027317451
+    }
+  }
+}

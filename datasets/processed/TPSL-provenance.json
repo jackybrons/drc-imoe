@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "loader_cell_count": 70,
+  "counts": {
+    "ARBITRARY": 53,
+    "FIXED": 17
+  },
+  "notebook_transform": {
+    "voltage_range": [
+      3.6,
+      4.15
+    ],
+    "qv_points": 50,
+    "source_order": [
+      "first20_workbook",
+      "continuation_workbook"
+    ],
+    "output_columns": [
+      "Cycle_Index",
+      "QV_Curve",
+      "Charge_Current(A)",
+      "Temperture",
+      "Discharge_Current(A)",
+      "Max_Charge_Capacity(Ah)",
+      "Max_Discharge_Capacity(Ah)"
+    ]
+  },
+  "exclusions": {
+    "complete_but_not_used_by_loader": [
+      "ARBITRARY:#4",
+      "ARBITRARY:#51"
+    ],
+    "incomplete_source_pair": [
+      "FIXED:#2 (missing continuation workbook)"
+    ],
+    "paper_cells_missing_from_source": [
+      "FIXED:#10",
+      "FIXED:#13",
+      "FIXED:#16",
+      "FIXED:#19"
+    ]
+  },
+  "mappings": [
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#1",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#1/LR1865SZ_first20cycle210117_001_1.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#1/LR1865SZ_cycles210121_001_1.xlsx",
+      "output": "TPSL-Arbitrary/#1/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#3",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#3/LR1865SZ_first20cycle201224_001_1.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#3/LR1865SZ_cycles201228_001_1.xlsx",
+      "output": "TPSL-Arbitrary/#3/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#7",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#7/LR1865SZ_first20cycle201225_001_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#7/LR1865SZ_cycles201229_001_2.xlsx",
+      "output": "TPSL-Arbitrary/#7/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#9",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#9/LR1865SZ_first20cycle210117_001_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#9/LR1865SZ_cycles210121_001_3.xlsx",
+      "output": "TPSL-Arbitrary/#9/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#14",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#14/LR1865SZ_first20cycle201225_001_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#14/LR1865SZ_cycles201229_001_5.xlsx",
+      "output": "TPSL-Arbitrary/#14/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#15",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#15/LR1865SZ_first20cycle210106_001_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#15/LR1865SZ_cycles210110_001_5.xlsx",
+      "output": "TPSL-Arbitrary/#15/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#17",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#17/LR1865SZ_first20cycle201225_001_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#17/LR1865SZ_cycles201229_001_6.xlsx",
+      "output": "TPSL-Arbitrary/#17/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#18",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#18/LR1865SZ_first20cycle210106_001_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#18/LR1865SZ_cycles210110_001_6.xlsx",
+      "output": "TPSL-Arbitrary/#18/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#20",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#20/LR1865SZ_first20cycles201201_001_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#20/LR1865SZ_cycles210103_001_7.xlsx",
+      "output": "TPSL-Arbitrary/#20/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#21",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#21/LR1865SZ_first20cycle210112_001_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#21/LR1865SZ_cycles210116_001_7.xlsx",
+      "output": "TPSL-Arbitrary/#21/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#24",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#24/LR1865SZ_first20cycle210104_002_1.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#24/LR1865SZ_cycles210108_002_1.xlsx",
+      "output": "TPSL-Arbitrary/#24/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#25",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#25/LR1865SZ_first20cycle210116_002_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#25/LR1865SZ_cycles210120_002_2.xlsx",
+      "output": "TPSL-Arbitrary/#25/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#27",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#27/LR1865SZ_first20cycle201222_002_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#27/LR1865SZ_cycles201226_002_2.xlsx",
+      "output": "TPSL-Arbitrary/#27/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#28",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#28/LR1865SZ_first20cycle210104_002_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#28/LR1865SZ_cycles210108_002_2.xlsx",
+      "output": "TPSL-Arbitrary/#28/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#30",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#30/LR1865SZ_first20cycle201222_002_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#30/LR1865SZ_cycles201226_002_3.xlsx",
+      "output": "TPSL-Arbitrary/#30/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#31",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#31/LR1865SZ_first20cycle210103_002_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#31/LR1865SZ_cycles210107_002_3.xlsx",
+      "output": "TPSL-Arbitrary/#31/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#34",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#34/LR1865SZ_first20cycle210111_002_4.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#34/LR1865SZ_cycles210115_002_4.xlsx",
+      "output": "TPSL-Arbitrary/#34/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#36",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#36/LR1865SZ_first20cycle201229_002_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#36/LR1865SZ_cycles210102_002_5.xlsx",
+      "output": "TPSL-Arbitrary/#36/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#37",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#37/LR1865SZ_first20cycle210111_002_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#37/LR1865SZ_cycles210115_002_5.xlsx",
+      "output": "TPSL-Arbitrary/#37/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#39",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#39/LR1865SZ_first20cycle201230_002_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#39/LR1865SZ_cycles210103_002_6.xlsx",
+      "output": "TPSL-Arbitrary/#39/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#40",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#40/LR1865SZ_first20cycle210111_002_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#40/LR1865SZ_cycles210115_002_6.xlsx",
+      "output": "TPSL-Arbitrary/#40/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#42",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#42/LR1865SZ_first20cycle201229_002_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#42/LR1865SZ_cycles210102_002_8.xlsx",
+      "output": "TPSL-Arbitrary/#42/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#46",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#46/LR1865SZ_first20cycle201229_003_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#46/LR1865SZ_cycles210102_003_5.xlsx",
+      "output": "TPSL-Arbitrary/#46/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#47",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#47/LR1865SZ_first20cycle210111_003_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#47/LR1865SZ_cycles210115_003_5.xlsx",
+      "output": "TPSL-Arbitrary/#47/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#50",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#50/LR1865SZ_first20cycle201229_003_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#50/LR1865SZ_cycles210102_003_6.xlsx",
+      "output": "TPSL-Arbitrary/#50/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#54",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#54/LR1865SZ_first20cycle201230_003_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#54/LR1865SZ_cycles210103_003_7.xlsx",
+      "output": "TPSL-Arbitrary/#54/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#55",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#55/LR1865SZ_first20cycle210111_003_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#55/LR1865SZ_cycles210115_003_7.xlsx",
+      "output": "TPSL-Arbitrary/#55/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#56",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#56/LR1865SZ_first20cycle210111_003_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#56/LR1865SZ_cycles210115_003_8.xlsx",
+      "output": "TPSL-Arbitrary/#56/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#59",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#59/LR1865SZ_first20cycle201229_003_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#59/LR1865SZ_cycles210102_003_8.xlsx",
+      "output": "TPSL-Arbitrary/#59/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#60",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#60/LR1865SZ_first20cycle210118_001_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#60/LR1865SZ_cycles210122_001_5.xlsx",
+      "output": "TPSL-Arbitrary/#60/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#74",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#74/LR1865SZ_first20cycle210122_004_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#74/LR1865SZ_cycles210126_004_5.xlsx",
+      "output": "TPSL-Arbitrary/#74/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#75",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#75/LR1865SZ_first20cycle210122_004_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#75/LR1865SZ_cycles210126_004_6.xlsx",
+      "output": "TPSL-Arbitrary/#75/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#76",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#76/LR1865SZ_first20cycle210122_005_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#76/LR1865SZ_cycles210126_005_5.xlsx",
+      "output": "TPSL-Arbitrary/#76/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#77",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#77/LR1865SZ_first20cycle210122_005_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#77/LR1865SZ_cycles210126_005_6.xlsx",
+      "output": "TPSL-Arbitrary/#77/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#67",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#67/LR1865SZ_first20cycle210120_003_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#67/LR1865SZ_cycles210124_003_5.xlsx",
+      "output": "TPSL-Arbitrary/#67/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#68",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#68/LR1865SZ_first20cycle210120_003_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#68/LR1865SZ_cycles210124_003_7.xlsx",
+      "output": "TPSL-Arbitrary/#68/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#69",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#69/LR1865SZ_first20cycle210120_003_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#69/LR1865SZ_cycles210124_003_8.xlsx",
+      "output": "TPSL-Arbitrary/#69/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "train",
+      "cell_id": "#73",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#73/LR1865SZ_first20cycle210122_004_4.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#73/LR1865SZ_cycles210126_004_4.xlsx",
+      "output": "TPSL-Arbitrary/#73/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "val",
+      "cell_id": "#66",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#66/LR1865SZ_first20cycle210120_002_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#66/LR1865SZ_cycles210124_002_8.xlsx",
+      "output": "TPSL-Arbitrary/#66/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "val",
+      "cell_id": "#70",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#70/LR1865SZ_first20cycle210122_004_1.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#70/LR1865SZ_cycles210126_004_1.xlsx",
+      "output": "TPSL-Arbitrary/#70/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#5",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#5/LR1865SZ_first20cycle210117_001_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#5/LR1865SZ_cycles210121_001_2.xlsx",
+      "output": "TPSL-Arbitrary/#5/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#8",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#8/LR1865SZ_first20cycle210105_001_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#8/LR1865SZ_cycles210109_001_2.xlsx",
+      "output": "TPSL-Arbitrary/#8/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#11",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#11/LR1865SZ_first20cycle201225_001_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#11/LR1865SZ_cycles201229_001_3.xlsx",
+      "output": "TPSL-Arbitrary/#11/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#12",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#12/LR1865SZ_first20cycle210105_001_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#12/LR1865SZ_cycles210109_001_3.xlsx",
+      "output": "TPSL-Arbitrary/#12/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#71",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#71/LR1865SZ_first20cycle210122_004_2.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#71/LR1865SZ_cycles210126_004_2.xlsx",
+      "output": "TPSL-Arbitrary/#71/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#72",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#72/LR1865SZ_first20cycle210122_004_3.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#72/LR1865SZ_cycles210126_004_3.xlsx",
+      "output": "TPSL-Arbitrary/#72/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#33",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#33/LR1865SZ_first20cycle201229_002_4.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#33/LR1865SZ_cycles210102_002_4.xlsx",
+      "output": "TPSL-Arbitrary/#33/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#43",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#43/LR1865SZ_first20cycle210111_002_8.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#43/LR1865SZ_cycles210115_002_8.xlsx",
+      "output": "TPSL-Arbitrary/#43/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#61",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#61/LR1865SZ_first20cycle210118_001_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#61/LR1865SZ_cycles210122_001_6.xlsx",
+      "output": "TPSL-Arbitrary/#61/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#62",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#62/LR1865SZ_first20cycle210121_001_7.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#62/LR1865SZ_cycles210125_001_7.xlsx",
+      "output": "TPSL-Arbitrary/#62/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#63",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#63/LR1865SZ_first20cycle210120_002_4.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#63/LR1865SZ_cycles210124_002_4.xlsx",
+      "output": "TPSL-Arbitrary/#63/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#64",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#64/LR1865SZ_first20cycle210120_002_5.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#64/LR1865SZ_cycles210124_002_5.xlsx",
+      "output": "TPSL-Arbitrary/#64/combined_data.csv"
+    },
+    {
+      "condition": "ARBITRARY",
+      "split": "test",
+      "cell_id": "#65",
+      "first20_workbook": "Cycled with Arbitrary Uses Profiles/#65/LR1865SZ_first20cycle210121_002_6.xlsx",
+      "continuation_workbook": "Cycled with Arbitrary Uses Profiles/#65/LR1865SZ_cycles210125_002_6.xlsx",
+      "output": "TPSL-Arbitrary/#65/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#6",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#6/LR1865SZ_first20cycle201213_001_2.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#6/LR1865SZ_cycles201217_001_2.xlsx",
+      "output": "TPSL-Fixed/#6/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#22",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#22/LR1865SZ_first20cycle201210_002_1.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#22/LR1865SZ_cycle201214_002_1.xlsx",
+      "output": "TPSL-Fixed/#22/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#26",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#26/LR1865SZ_first20cycle201210_002_2.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#26/LR1865SZ_cycle201214_002_2.xlsx",
+      "output": "TPSL-Fixed/#26/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#29",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#29/LR1865SZ_first20cycle201210_002_3.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#29/LR1865SZ_cycle201214_002_3.xlsx",
+      "output": "TPSL-Fixed/#29/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#32",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#32/LR1865SZ_first20cycle201210_002_4.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#32/LR1865SZ_cycles201214_002_4.xlsx",
+      "output": "TPSL-Fixed/#32/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#38",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#38/LR1865SZ_first20cycle201210_002_6.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#38/LR1865SZ_cycles201214_002_6.xlsx",
+      "output": "TPSL-Fixed/#38/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#41",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#41/LR1865SZ_first20cycle201217_002_8.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#41/LR1865SZ_cycles201221_002_8.xlsx",
+      "output": "TPSL-Fixed/#41/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#44",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#44/LR1865SZ_first20cycle200927_003_5.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#44/LR1865SZ_cycles201003_003_5.xlsx",
+      "output": "TPSL-Fixed/#44/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#49",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#49/LR1865SZ_first20cycle201217_003_6.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#49/LR1865SZ_cycles201221_003_6.xlsx",
+      "output": "TPSL-Fixed/#49/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#52",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#52/LR1865SZ_first20cycle200927_003_7.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#52/LR1865SZ_cycles201003_003_7.xlsx",
+      "output": "TPSL-Fixed/#52/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "train",
+      "cell_id": "#53",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#53/LR1865SZ_first20cycle201217_003_7.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#53/LR1865SZ_cycles201221_003_7.xlsx",
+      "output": "TPSL-Fixed/#53/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "val",
+      "cell_id": "#45",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#45/LR1865SZ_first20cycle201217_003_5.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#45/LR1865SZ_cycles201221_003_5.xlsx",
+      "output": "TPSL-Fixed/#45/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "val",
+      "cell_id": "#58",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#58/LR1865SZ_first20cycle201217_003_8.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#58/LR1865SZ_cycles201221_003_8.xlsx",
+      "output": "TPSL-Fixed/#58/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "test",
+      "cell_id": "#23",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#23/LR1865SZ_first20cycle201222_002_1.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#23/LR1865SZ_cycles201226_002_1.xlsx",
+      "output": "TPSL-Fixed/#23/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "test",
+      "cell_id": "#35",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#35/LR1865SZ_first20cycle201210_002_5.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#35/LR1865SZ_cycles201214_002_5.xlsx",
+      "output": "TPSL-Fixed/#35/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "test",
+      "cell_id": "#48",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#48/LR1865SZ_first20cycle200927_003_6.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#48/LR1865SZ_cycles201003_003_6.xlsx",
+      "output": "TPSL-Fixed/#48/combined_data.csv"
+    },
+    {
+      "condition": "FIXED",
+      "split": "test",
+      "cell_id": "#57",
+      "first20_workbook": "Cycled with Fixed Current Profiles/#57/LR1865SZ_first20cycle200927_003_8.xlsx",
+      "continuation_workbook": "Cycled with Fixed Current Profiles/#57/LR1865SZ_cycles201003_003_8.xlsx",
+      "output": "TPSL-Fixed/#57/combined_data.csv"
+    }
+  ]
+}

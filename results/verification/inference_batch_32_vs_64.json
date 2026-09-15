@@ -1,0 +1,79 @@
+{
+  "tolerance": {
+    "absolute": 1e-06,
+    "relative": 1e-05
+  },
+  "passed": true,
+  "checks": [
+    {
+      "summary": "results/runs/server/TPSL_locked_seeds/search_summary.json",
+      "workflow": "iMOE_SDR",
+      "dataset": "TPSL",
+      "condition": "Arbitrary",
+      "seed": 2025,
+      "batch_sizes": [
+        32,
+        64
+      ],
+      "truth_identical": true,
+      "models": {
+        "iMOE_SDR": {
+          "shape": [
+            247,
+            50
+          ],
+          "max_absolute_difference": 2.384185791015625e-07,
+          "mean_absolute_difference": 5.4923146031171655e-09,
+          "allclose_atol_1e-6_rtol_1e-5": true,
+          "maximum_metric_difference": 0.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "summary": "results/runs/server/TPSL_full_fusion/locked_seeds/search_summary.json",
+      "workflow": "dual_router",
+      "dataset": "TPSL",
+      "condition": "Arbitrary",
+      "seed": 2025,
+      "batch_sizes": [
+        32,
+        64
+      ],
+      "truth_identical": true,
+      "models": {
+        "iMOE": {
+          "shape": [
+            247,
+            50
+          ],
+          "max_absolute_difference": 4.76837158203125e-07,
+          "mean_absolute_difference": 4.922812824048606e-09,
+          "allclose_atol_1e-6_rtol_1e-5": true,
+          "maximum_metric_difference": 0.0
+        },
+        "iMOE_CSR": {
+          "shape": [
+            247,
+            50
+          ],
+          "max_absolute_difference": 2.384185791015625e-07,
+          "mean_absolute_difference": 6.660275886360978e-09,
+          "allclose_atol_1e-6_rtol_1e-5": true,
+          "maximum_metric_difference": 7.450580596923828e-09
+        },
+        "dual_router": {
+          "shape": [
+            247,
+            50
+          ],
+          "max_absolute_difference": 2.384185791015625e-07,
+          "mean_absolute_difference": 5.598492780478637e-09,
+          "allclose_atol_1e-6_rtol_1e-5": true,
+          "maximum_metric_difference": 0.0
+        }
+      },
+      "passed": true
+    }
+  ]
+}
